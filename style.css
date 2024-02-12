@@ -1,0 +1,379 @@
+body{
+    background-color: #333;
+
+}
+.background{
+    height: 550px;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.hair1{
+    height: 70px;
+    width: 140px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    background-color: #000;
+    position: relative;
+    top: 30px;
+    left: 95px;
+}
+.hair2{
+    height: 180px;
+    width: 140px;
+    background-color: #000;
+    position: relative;
+    top: 62.5px;
+    border-radius: 0 0 60px 60px;
+}
+.face{
+    background-color: #ffecb3;
+    height: 90px;
+    width: 110px;
+    position: relative;
+    left: 15px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+.eye-left{
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 16px;
+    left: 9px;
+}
+.eye-right{
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 14px;
+    left: 70px;
+}
+.eyeball1, .eyeball2{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 4px;
+    left: 4.5px;
+}
+.girl:hover, .eyeball1{
+    animation: 4s see1;
+}
+@keyframes see1{
+    50%{
+        top: 8.5px;
+        left: 6.5px;
+    }
+}
+.girl:hover, .eyeball2{
+    animation: 4s see2;
+}
+@keyframes see2{
+    50%{
+       top: 8px;
+       left: 2px; 
+    }
+}
+.dot1, .dot3{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    top: 4px;
+}
+.dot1{
+    left: 2px;
+}
+.dot3{
+    left: 10px;
+}
+.dot2, .dot4{
+    height: 3px;
+    width: 3px;
+    background-color: #fff;
+    position: relative;
+    top: 4px;
+    border-radius: 50%;
+}
+.dot2{
+    left: 14px;
+}
+.dot4{
+    left: 5px;
+}
+.hairband{
+    background-color: #66ccff;
+    height: 55px;
+    width: 110px;
+    bottom: 143px;
+    left: 14.5px;
+    position: relative;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+.hairband1{
+    background-color: #000;
+    height: 56px;
+    width: 112px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    position: relative;
+    left: -0.5px;
+    top: 7px;
+}
+.mouth{
+    background-color: #ffb3b3;
+    height: 25px;
+    width: 50px;
+    left: 29px;
+    bottom: 5px;
+    position: relative;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+.girl:hover, .mouth{
+    animation: blow 4s;
+}
+@keyframes blow{
+    50%{
+        height: 20px;
+        width: 20px;
+        left: 43px;
+        border-radius: 50%;
+    }
+}
+.dress{
+    background-color: #11ed3a;
+    height: 130px;
+    width: 120px;
+    position: relative;
+    border-radius: 35px 35px 0 0;
+    top: 18px;
+    right: 6px;
+}
+.neck{
+    background-color: #ffecb3;
+    position: relative;
+    height: 40px;
+    width: 30px;
+    left: 40px;
+    bottom: 130px;
+    border-radius: 0 0 15px 15px;
+}
+.ear-left, .ear-right{
+    background-color: #ffecb3;
+    position: relative;
+    height: 10px;
+    width: 20px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+.ear-left{
+    transform: rotate(-90deg);
+    right: 5px;
+    bottom: 118px;
+}
+.ear-right{
+    transform: rotate(90deg);
+    left: 124px;
+    bottom: 127px;
+}
+.cake{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -125px;
+}
+.plate{
+    height: 110px;
+    width: 250px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 #ccc,
+                0 4px 0 #ccc,
+                0 5px 0 rgb(black,0.5);
+}
+.cake > *{
+    position: absolute;
+}
+.layer{
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 230px;
+    border-radius: 50%;
+    background-color: #4b340f;
+    box-shadow: 0 2px 0 #553c13,
+                0 4px 0 #553c13,
+                0 6px 0 #553c13,
+                0 8px 0 #4b340f,
+                0 10px 0 #4b344b,
+                0 12px 0 #553c13,
+                0 14px 0 #553c13,
+                0 16px 0 #553c13,
+                0 18px 0 #4b340f,
+                0 20px 0 #553c13,
+                0 22px 0 #4b340f,
+                0 24px 0 #553c13,
+                0 26px 0 #553c13,
+                0 28px 0 #553c13,
+                0 30px 0 #4b340f;
+
+}
+.layer-top{
+    top: 0;
+}
+.layer-mid{
+    top: 33px;
+}
+.layer-bottom{
+    top: 66px;
+}
+.icing{
+    top: 2px;
+    left: 5px;
+    background-color: #f0e4d0;
+    height: 90px;
+    width: 220px;
+    border-radius: 50%;
+}
+.icing::before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    bottom: 6px;
+    left: 5px;
+    background-color: #f0e4d0;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 4px #f0e4d0,
+                0 0 4px #f3ead9,
+                0 0 4px #f3ead9;
+}
+.drip{
+    display: block;
+    height: 60px;
+    width: 50px;
+    background-color: #f0e4d0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.drip1{
+    top: 53px;
+    left: 5px;
+    transform: skewY(15deg);
+    height: 48px;
+    width: 40px;
+}
+.drip2{
+    top: 55px;
+    left: 175px;
+    transform: skewY(-15deg);
+}
+.drip3{
+    top: 54px;
+    left: 70px;
+    width: 70px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.candle{
+    background-color: #7b020b;
+    height: 50px;
+    width: 16px;
+    border-radius: 8px / 4px ;
+    top: -20px;
+    left: 58%;
+    margin-left: -8px;
+    z-index: 10;
+}
+.candle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #79080f;
+
+}
+.flame{
+    position: absolute;
+    background-color: orange;
+    height: 35px;
+    width: 15px;
+    border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+    top: -34px;
+    left: 50%;
+    margin-left: -7.5px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(orange,0.5),
+                0 0 20px rgba(orange,0.5),
+                0 0 60px rgba(orange,0.5),
+                0 0 80px rgba(orange,0.5);
+    transform-origin: 50% 90%;
+    animation: flicker is ease-in-out alternate infinite;
+}
+.girl:hover, .flame{
+    animation: vanish 2s forwards;
+}
+@keyframes flicker {
+    0%{
+        transform: skewX(5deg);
+        box-shadow: 0 0 10px rgba(orange,0.2),
+                    0 0 20px rgba(orange,0.2),
+                    0 0 60px rgba(orange,0.2),
+                    0 0 80px rgba(orange,0.2);
+    }
+    25%{
+        transform: skewX(-5deg);
+        box-shadow: 0 0 10px rgba(orange,0.5),
+                    0 0 20px rgba(orange,0.5),
+                    0 0 60px rgba(orange,0.5),
+                    0 0 80px rgba(orange,0.5);
+    }
+    50%{
+        transform: skewX(10deg);
+        box-shadow: 0 0 10px rgba(orange,0.3),
+                    0 0 20px rgba(orange,0.3),
+                    0 0 60px rgba(orange,0.3),
+                    0 0 80px rgba(orange,0.3);
+    }
+    75%{
+        transform: skewX(-10deg);
+        box-shadow: 0 0 10px rgba(orange,0.4),
+                    0 0 20px rgba(orange,0.4),
+                    0 0 60px rgba(orange,0.4),
+                    0 0 80px rgba(orange,0.4);
+    }
+}
+@keyframes vanish{
+    100%{
+        background: none;
+    }
+}
+h2{
+    font-family: 'Pacifico', cursive;
+    color: greenyellow;
+    text-shadow: 0 2px rgba(0,0,0,0.5);
+    font-size: 25px;
+    margin-top: 420px;
+    margin-left: 50px;
+}
